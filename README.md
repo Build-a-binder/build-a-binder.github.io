@@ -14,6 +14,10 @@ To get an idea for the scope read [the grant proposal](proposal.md).
 Everyone is welcome to contribute. In particular people local to the
 places at which we would like to hold the first three events are welcome.
 
+To keep an eye on what is happening and receive notifications:
+* click the "Watch" button towards the top right
+* you will receive notifications about the going ons in this repository
+
 To get an idea of the overall things that need doing checkout #1. More
 details and in flux discussions are happening in [the issues](../../issues).
 
