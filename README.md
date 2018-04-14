@@ -8,6 +8,9 @@ The repository is also used to organise the first three such events.
 
 To get an idea for the scope read [the grant proposal](proposal.md).
 
+# The Goal
+
+We plan to create the material for a one-day workshop giving an introduction to the Binder project and the public mybinder.org service, and using it at three test events in Europe. These first events will allow the material to be trialed and improved, so creating a lasting curriculum and allowing others to run similar workshops. The workshops will serve educators, journalists and scientists who want to learn to use Binder to improve the accessibility, shareability and reusability of their work.
 
 # Contributing
 
