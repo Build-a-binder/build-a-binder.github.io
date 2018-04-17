@@ -14,22 +14,24 @@ We plan to create the material for a one-day workshop giving an introduction to 
 
 # Contributing
 
-Everyone is welcome to contribute. In particular people local to the
-places at which we would like to hold the first three events are welcome.
+Everyone is encouraged to contribute. Good at organising events on the ground, user of mybinder.org, experienced
+in teaching people new things, all these and more are things in demand here. In particular people local to the
+places at which we would like to hold the first three events will be welcomed with open arms 🤗
 
 To keep an eye on what is happening and receive notifications:
 * click the "Watch" button towards the top right
 * you will receive notifications about the going ons in this repository
 
-To get an idea of the overall things that need doing checkout #1. More
+To get an idea of the overall things that need doing checkout [the ROADMAP](https://github.com/betatim/build-a-binder/issues/1). More
 details and in flux discussions are happening in [the issues](../../issues).
 
 
 # Proposal text
 
-The full text of the grant proposal submitted to Mozilla is [here](proposal.md).
+If you'd like a longer version of what is going on here, what the goals are (or used to be?), and where things are heading
+take a look at the full text of the [grant proposal submitted to Mozilla](proposal.md).
 
 
 # Support
 
-This work is supported by the Alfred P. Sloan Foundation and the Mozilla Foundation.
+This work is supported by amazing volunteers and the Alfred P. Sloan Foundation and the Mozilla Foundation.
