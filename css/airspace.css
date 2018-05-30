@@ -236,6 +236,21 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-top: 30px;
 }
 
+#call-to-action table{
+  background: white;
+  border: 1px solid #f8f8f8;
+  color: #777;
+  margin: 1em;
+  padding: 1rem;
+  text-rendering: optimizeLegibility;
+}
+#call-to-action tbody td {
+  padding: 2rem;
+  font-size: 1.4rem;
+  float: left;
+}
+
+
 /*--
 	Feature Start
 --*/
