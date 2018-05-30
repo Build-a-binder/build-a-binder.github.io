@@ -159,6 +159,16 @@ font header .navbar-default .navbar-nav li a:hover {
 #intro .section-title p {
   padding-top: 20px;
 }
+
+#intro ul{
+  color: #7B7B7B;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 28px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
 /*--
 	service Start
 --*/
@@ -237,16 +247,16 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 #call-to-action table{
-  background: white;
+  background: #F5F5F5;
   border: 1px solid #f8f8f8;
-  color: #777;
+  color: #666;
   margin: 1em;
   padding: 1rem;
   text-rendering: optimizeLegibility;
 }
 #call-to-action tbody td {
   padding: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   float: left;
 }
 
