@@ -29,17 +29,16 @@ permalink: /
         <div class="block">
           <div class="section-title">
             <h2>About the workshop</h2>
-            <!-- <p>Our objective is to increase the number of people publishing
-              educational, journalistic, and scientific materials that enable
-              readers to read, edit, re-run and re-use that content. We believe
-              Binder is the tool to achieve this.
-            </p> -->
           </div>
           <p>
-            You will learn how others are using Binder and related tools. At the
-             end of the workshop you will be able to take some of your content
+            The <a href="https://mybinder.org">myBinder.org</a> project drastically lowers the bar to sharing and re-using software. For the user to try out someone else's work requires only clicking a single link. For the author to prepare a binder-ready project is much easier than having to support many different platforms and for many projects involves little additional work. However Binder itself is a tool that requires some investment to master. The majority of researchers, journalists and educators have not yet discovered the Binder project or have heard it mentioned but do not know how to get started.
+          </p>
+          <p>
+            At this workshop you will learn how others are using <a href="https://mybinder.org">myBinder.org</a>
+            and related tools. At the
+             end of the workshop you will be able to take some of your own content
              (in a R or Jupyter notebook) and prepare it so that it can be used
-             by others by clicking one link.
+             by others on <a href="https://mybinder.org">myBinder.org</a>.
           </p>
           <br><br>
           <h3>This workshop is for you if:</h3>
@@ -51,6 +50,13 @@ permalink: /
             <li>You want to know how others are sharing their materials and want to
             share your own experiences</li>
           </ul>
+          <H3>Some example Binders:</h3>
+            <ul>
+              <li><a href="https://mybinder.org/v2/gh/ONSBigData/traffic_as_early_indicator/master?filepath=Report%20-%20Annual%20average%20daily%20traffic%20flow%20(AADF)%20as%20a%20correlate%20for%20GDP%20growth-Final.ipynb">Office of National Statistics - a report on traffic flow as an early indicator for GDP</a></li>
+              <li><a href="https://mybinder.org/v2/gh/AllenDowney/ThinkDSP/master?filepath=code/cacophony.ipynb">A book on digital signal processing, or how computers understand music</a></li>
+              <li><a href="https://mybinder.org/v2/gh/Calysto/conx/master?filepath=binder%2Findex.ipynb">A collection of notebooks about neural networks</a></li>
+              <li><a href="https://spacy.io/usage/linguistic-features#pos-tagging">Example of interactive code snippets in a normal webpage</a></li>
+            </ul>
         </div>
       </div><!-- .col-md-7 close -->
       <!-- Uncomment if you need to add an image for this section -->
@@ -119,7 +125,7 @@ permalink: /
           <i class="ion-earth"></i>
           <h4>Germany</h4>
           <p>
-            TBC: TBC
+            Berlin: late September
           </p>
           <a href="#" class="btn btn-service">Learn more</a>
         </div>
@@ -164,31 +170,43 @@ permalink: /
         </tr>
         <tr>
           <td>11:00 - 12:30</td>
-          <td>...</td>
+          <td>Zero2Binder - How to get a repository to work on mybinder.org</td>
         </tr>
         <tr>
           <td>12:30 - 13:30</td>
           <td>Lunch </td>
         </tr>
         <tr>
-          <td>13:30 - 15:00</td>
+          <td>13:30 - 14:00</td>
+          <td>Quiet work time - catch up on your email or chat with others</td>
+        </tr>
+        <tr>
+          <td>14:00 - 14:01</td>
           <td>Welcome back</td>
         </tr>
         <tr>
-          <td>15:00 - 15:30</td>
-          <td>Coffe break</td>
+          <td>14:01 - 15:15</td>
+          <td>Work on your own Binder - get your own repository working on mybinder.org</td>
         </tr>
         <tr>
-          <td>15:30 - 17:15</td>
-          <td>...</td>
+          <td>15:15 - 15:45</td>
+          <td>Coffee break</td>
+        </tr>
+        <tr>
+          <td>15:45 - 16:45</td>
+          <td>TBD</td>
+        </tr>
+        <tr>
+          <td>16:45-17:15</td>
+          <td>Cool things from today, show and tell what you worked on</td>
         </tr>
         <tr>
           <td>17:15-17:30</td>
-          <td>Wrap up, cool things that happened today, where to next?</td>
+          <td>Wrap up, where to next?</td>
         </tr>
         <tr>
           <td>17:30</td>
-          <td>...</td>
+          <td>Hang out if you want to.</td>
         </tr>
       </tbody>
       </table>
@@ -197,52 +215,3 @@ permalink: /
     </div>
   </div>
 </section>
-
-<!-- Content Start -->
-<!-- <section id="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="section-title text-center">
-        <h2>Fun Facts About Us</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        {% if site.data.funfacts.size > 0 %}
-        <div class="block">
-          {% for ff in site.data.funfacts %}
-          <ul class="counter-box clearfix">
-            <li>
-              <div class="block">
-                <i class="{{ ff.icon }}"></i>
-                <h4 class="counter">{{ ff.counter }}</h4>
-                <span>{{ ff.text }}</span>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-      </div>
-      <div class="col-md-6">
-        {% if site.data.testimonials.size > 0 %}
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
-            {% for tm in site.data.testimonials %}
-            <div>
-                <img src="img/cotation.png" alt="IMG">
-                <p>{{ tm.testimonial }}</p>
-                <div class="user">
-                  <img src="{{ tm.image }}" alt="Pepole">
-                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
-                </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-</section> -->
