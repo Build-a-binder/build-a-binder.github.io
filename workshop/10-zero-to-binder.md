@@ -205,3 +205,42 @@ fetch data. For security reasons FTP will never be allowed on mybinder.org.
 
 > Note: to start a discussion of opening additional ports create a new issue
 > on the [mybinder.org repository](https://github.com/jupyterhub/mybinder.org-deploy/)
+
+
+### Private files
+
+There currently is no way to access files which are not public from mybinder.org.
+
+For security reasons you should consider all information in a Binder as public.
+This means:
+* there should be no secrets (passwords, tokens, keys, etc) in your
+GitHub repository
+* you should not type passwords into a running Binder on mybinder.org
+* you should not upload your private SSH key or API token to a running Binder
+
+To support access to private files you will have to create a local deployment
+of [BinderHub](https://binderhub.readthedocs.io/) where you can then decide
+on the security trade offs yourself.
+
+
+## Beyond `requirements.txt`
+
+There are a few more ways you can specify what dependencies to install. Take a
+look at the complete list: http://repo2docker.readthedocs.io/en/latest/config_files.html
+
+
+## Configuring what visitors see
+
+You can influence what people who click your mybinder.org link see.
+
+### Directly opening a notebook
+
+You can direct your users directly to a notebook by adding an option to the URL:
+
+XXXXX
+
+
+### Using Jupyter lab
+
+Jupyter lab is installed by default and you can switch to using it by changing
+the URL you visit to: https://mybinder.org/v2/gh/<YOURNAME>/my-first-binder/master?urlpath=lab
