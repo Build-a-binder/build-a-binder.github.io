@@ -37,7 +37,7 @@ To do:
 
 ## Launch your first repository
 
-You jsut created a repository that is compatible with Binder! Before we explain
+You just created a repository that is compatible with Binder! Before we explain
 how this can be, head over to https://mybinder.org and see for yourself.
 
 The interface you see on mybinder.org let's you specify the repository you want
