@@ -130,7 +130,78 @@ To do:
 
 ## Questions?
 
-Brief pause for questions
+Brief pause for questions.
 
 
-## 
+## Putting data into your Binder
+
+So far we covered how to get software dependencies installed. Another kind of
+dependency for projects is data. There are a few ways to make data available
+in your Binder. Which is the best one depends on how big your data is and your
+preferences for sharing data.
+
+### Small public files
+
+The simplest approach for small data files that are public is to add them directly
+to your GitHub repository. This way they are directly baked into the environment
+and versioned together with your code.
+
+Works well for files with sizes up to maybe 10MB.
+
+### Medium public files
+
+For medium sized files, a few 10s of megabytes to a few hundred megabytes, you
+can add a special file named `postBuild` to your repository.
+
+To do:
+1. go to your GitHub repository and create a file called `postBuild`
+1. in your `postBuild` add a single line reading `wget -q -O gapminder.csv http://bit.ly/2uh4s3g`
+1. in your `requirements.txt` add line with `pandas` on it to add the pandas
+  library and one with `matplotlib` on it. This is not needed to get data, we are adding it because it is a good option for reading CSV files and making plots.
+1. click the Binder badge
+
+Once your Binder launches you should see that a new file that was not part
+of your repository has appeared.
+
+To see the data create a new notebook and use the below code to make a plot:
+```
+%matplotlib inline
+
+import pandas
+
+data = pandas.read_csv('gapminder.csv', index_col='country')
+
+# Extract year from last 4 characters of each column name
+years = data.columns.str.strip('gdpPercap_')
+# Convert year values to integers, saving results back to dataframe
+data.columns = years.astype(int)
+
+data.loc['Australia'].plot()
+```
+
+The data and code snippet were taken from a [Software Carpentry lesson](https://swcarpentry.github.io/python-novice-gapminder/09-plotting/index.html).
+
+The contents of the `postBuild` file is a shell script that is executed as part
+of the container image construction. This means it is only executed once when
+the image is built, not every time it is launched.
+
+### Large public files
+
+For large files it is not practical to place them in your GitHub repository nor
+to include them directly in the image.
+
+> Note: technically we can not stop you from including very large files in your
+> image. However large images take longer to launch, as well as taking up
+> storage space that mybinder.org has to pay for. Be considerate.
+
+The best option for large files is to use a library specific to the data format
+to stream the data as you are using it. Or if you have to download it on
+demand as part of your code.
+
+There are a few restrictions on outgoing traffic from your Binder that are
+imposed by the team operating mybinder.org. Currently only connections to
+HTTP and Git are allowed. This comes up when people want to use FTP sites to
+fetch data. For security reasons FTP will never be allowed on mybinder.org.
+
+> Note: to start a discussion of opening additional ports create a new issue
+> on the [mybinder.org repository](https://github.com/jupyterhub/mybinder.org-deploy/)
